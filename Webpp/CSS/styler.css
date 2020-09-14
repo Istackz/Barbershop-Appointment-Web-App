@@ -1,0 +1,282 @@
+body {
+  font-family: "PT Sans", sans-serif;
+  background: rgb(2, 0, 36);
+
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(11, 91, 232, 1) 1%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-image: url(../images/backgroundBarber.jpg);
+}
+.title {
+  background-color: grey;
+  text-align: center;
+  font-size: 60px;
+  color: white;
+}
+
+/* --------------------------------------NAV BAR -----------------------------------*/
+
+#menu {
+  width: 35px;
+  height: 30px;
+  margin: 30px 0 20px 20px;
+  cursor: pointer;
+}
+.bar {
+  height: 5px;
+  width: 100%;
+  background-color: whitesmoke;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+#bar1 {
+  transform: translateY(-4px);
+}
+#bar3 {
+  transform: translateY(4px);
+}
+.nav li a {
+  color: #fff;
+  text-decoration: none;
+}
+.nav li a:hover {
+  font-weight: bold;
+}
+.nav li {
+  list-style: none;
+  padding: 16px 0;
+}
+.nav {
+  padding: 0;
+  margin: 0 20px;
+  transition: 0.3s ease;
+  display: none;
+}
+.menu-bg,
+#menu-bar {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.menu-bg {
+  z-index: 1;
+  width: 0;
+  height: 0;
+  margin: 30px 0 20px 20px;
+  background: radial-gradient(circle, #94bbe9, #020024);
+  border-radius: 20%;
+  transition: 0.3s ease;
+}
+#menu-bar {
+  z-index: 2;
+}
+.change-bg {
+  width: 300px;
+  height: 300px;
+  transform: translate(-60%, -30%);
+}
+.change .bar {
+  background-color: white;
+}
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3 {
+  transform: translateY(-6px) rotate(45deg);
+}
+.change #bar2 {
+  opacity: 0;
+}
+.change {
+  display: block;
+}
+
+.forum-container {
+  width: auto;
+  height: auto;
+  text-align: center;
+  height: 100%;
+}
+.grid {
+  text-align: center;
+  color: white;
+}
+
+.grid-1 {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 300px 300px 300px;
+}
+
+/* items */
+
+.grid-1 div {
+  color: white;
+  font-size: 20px;
+  padding: 30px 70px;
+  margin: 20px;
+}
+
+/*------------------------------------- Picture Styles---------------------------- */
+
+.item-1 {
+  background-image: url(../images/IMG_2712.JPEG);
+  background-size: cover;
+}
+.item-2 {
+  background-image: url(../images/IMG_0659.JPEG);
+  background-size: cover;
+}
+.item-3 {
+  background-image: url(../images/IMG_2755.JPEG);
+  background-size: cover;
+}
+.item-4 {
+  background-image: url(../images/IMG_2034.JPEG);
+  background-size: cover;
+}
+.item-5 {
+  background-image: url(../images/IMG_0730.JPEG);
+  background-size: cover;
+}
+.item-6 {
+  background-image: url(../images/IMG_0645.JPEG);
+  background-size: cover;
+}
+.item-7 {
+  background-image: url(../images/IMG_0046.JPEG);
+  background-size: cover;
+}
+.item-8 {
+  background-image: url(../images/IMG_0033.JPEG);
+  background-size: cover;
+}
+.item-9 {
+  background-image: url(../images/IMG_2491.JPEG);
+  background-size: cover;
+}
+/* -----------------------------------------------Contact Info------------------------------------*/
+/* warn against lack of browser support */
+.contact-container li:hover {
+  color: orange;
+  text-decoration: bold 30px;
+  font-size: 37px;
+  transition: all 0.5s ease-out;
+}
+.contact-container li {
+  color: orange;
+  list-style: none;
+  float: left;
+  font-size: 30px;
+  padding: 100px;
+}
+/* --------------------------------------MOBILE CSS -----------------------------------*/
+@media screen and (max-width: 375px) {
+  #menu {
+    width: 25px;
+    height: 20px;
+    margin: 20px 0 20px 20px;
+    cursor: pointer;
+  }
+  .link-container {
+    list-style: none;
+    float: right;
+  }
+  .forum-container {
+    width: auto;
+    height: auto;
+    text-align: center;
+  }
+  .title {
+    text-align: center;
+    color: white;
+    margin: 5px black solid;
+    font-size: 30px;
+  }
+  iframe {
+    width: auto;
+    height: 100%;
+    align-items: center;
+  }
+
+  .grid {
+    text-align: center;
+    color: white;
+  }
+  .grid-1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 200px 200px;
+  }
+
+  /* items */
+
+  .grid-1 div {
+    color: white;
+    font-size: 20px;
+    padding: 90px 70px;
+    margin: 20px;
+  }
+
+  /* specific item styles */
+
+  .item-1 {
+    background-image: url(../images/IMG_2712.JPEG);
+    background-size: cover;
+  }
+  .item-2 {
+    background-image: url(../images/IMG_0659.JPEG);
+    background-size: cover;
+  }
+  .item-3 {
+    background-image: url(../images/IMG_2755.JPEG);
+    background-size: cover;
+  }
+  .item-4 {
+    background-image: url(../images/IMG_2034.JPEG);
+    background-size: cover;
+  }
+  .item-5 {
+    background-image: url(../images/IMG_0730.JPEG);
+    background-size: cover;
+  }
+  .item-6 {
+    background-image: url(../images/IMG_0645.JPEG);
+    background-size: cover;
+  }
+  .item-7 {
+    background-image: url(../images/IMG_0046.JPEG);
+    background-size: cover;
+  }
+  .item-8 {
+    background-image: url(../images/IMG_0033.JPEG);
+    background-size: cover;
+  }
+  .item-9 {
+    background-image: url(../images/IMG_2491.JPEG);
+    background-size: cover;
+  }
+
+  /* warn against lack of browser support */
+
+  .contact-container li:hover {
+    color: red;
+    text-decoration: bold 30px;
+    font-size: 30px;
+
+    transition: all 0.5s ease-out;
+  }
+  .contact-container li {
+    color: radial-gradient(circle, #94bbe9, #020024);
+    list-style: none;
+    color: orange;
+    padding: 60px;
+  }
+  .footer {
+    text-align: center;
+  }
+}
